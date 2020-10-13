@@ -1,19 +1,10 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <h1>Ajout de l'article :</h1>
+    <h1>Modification de la categorie "{{ categorie.libelle }}"</h1>
     <form method="post">
-        <input type="text" name="Titre">
-        <textarea name="Description">
-        </textarea>
-        <input type="date" name="DateAjout" >
-        <select name="Auteur">
-            <option >Rebecca</option>
-            <option >Alexandre</option>
-            <option >Emilie</option>
-            <option>Léo</option>
-            <option >Aegir</option>
-        </select>
+
+
         {# Categorie #}
         <select name="Categorie">
             <span class="fas fa-history"></span>" <option >Thriller</option>
@@ -21,6 +12,7 @@
             <option >Histoire</option>
             <option>Science</option>
             <option >People</option>
+
         </select>
         <input type="submit" value="Enregistrer les modifications">
     </form>

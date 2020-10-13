@@ -1,3 +1,4 @@
+
 <?php
 //fichier de brice
 require_once "../vendor/autoload.php";
@@ -48,3 +49,5 @@ if($controller <> '') {
     $ctrl = new \src\Controller\DefaultController();
     echo $ctrl->index();
 }
+
+
